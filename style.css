@@ -41,6 +41,28 @@ a {
     color: #5d6678;
 }
 
+.language-switch {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0 0 24px;
+}
+
+.language-switch a {
+    display: inline-block;
+    border: 1px solid #cbd5e6;
+    border-radius: 999px;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+.notice {
+    background: #eef4ff;
+    border: 1px solid #cbdaf8;
+    border-radius: 10px;
+    padding: 12px 14px;
+}
+
 @media (max-width: 640px) {
     main {
         padding: 20px 12px;
