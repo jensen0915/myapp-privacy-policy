@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SnapScanCard</title>
+  <meta name="description" content="SnapScanCard is a business card scanning and contact memory app for Android.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f8fb;
+      --surface: #ffffff;
+      --text: #172033;
+      --muted: #5c667a;
+      --accent: #0f4c9a;
+      --line: #d8deea;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+    .hero, section {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+      margin-bottom: 18px;
+    }
+    h1, h2 {
+      line-height: 1.2;
+      margin: 0 0 14px;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+    h2 {
+      font-size: 1.35rem;
+    }
+    p {
+      margin: 0 0 12px;
+    }
+    ul {
+      padding-left: 1.25rem;
+      margin: 0;
+    }
+    a {
+      color: var(--accent);
+      font-weight: 650;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1.08rem;
+      margin-bottom: 18px;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-top: 18px;
+    }
+    .note {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="hero">
+      <h1>SnapScanCard</h1>
+      <p class="tagline">Business card scanning and contact memory for Android.</p>
+      <p>SnapScanCard helps users scan business cards, review OCR suggestions, organize contact details, attach meeting notes, and keep a local record of follow-up context.</p>
+      <p>SnapScanCard 是一款 Android 名片掃描與聯絡資料整理 App，可協助使用者掃描名片、檢查 OCR 辨識結果、整理聯絡資訊、記錄見面情境與後續追蹤狀態。</p>
+      <div class="links">
+        <a href="https://jensen0915.github.io/myapp-privacy-policy/snapscancard.html">Privacy Policy</a>
+        <a href="https://jensen0915.github.io/myapp-privacy-policy/snapscancard-terms.html">Terms of Service</a>
+        <a href="mailto:jensen0915@gmail.com">Contact Support</a>
+      </div>
+    </article>
+
+    <section>
+      <h2>Core features</h2>
+      <ul>
+        <li>Scan or import a business card image and review OCR-recognized fields before saving.</li>
+        <li>Store names, companies, titles, phone numbers, email addresses, websites, addresses, tags, notes, and social links.</li>
+        <li>Attach person photos and business card images for later reference.</li>
+        <li>Use local export/import and optional manual Google Drive backup and restore.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Google Drive access</h2>
+      <p>Google Drive access is optional and is used only when the user chooses to sign in and run a manual backup or restore.</p>
+      <p>The app requests Google Drive access to create and manage SnapScanCard backup ZIP files, including a dedicated backup folder named <strong>SnapScanCardBackup</strong>. The app does not use Google Drive for automatic sync, advertising, or unrelated file access.</p>
+      <p class="note">Google Drive 備份是手動功能；使用者不登入 Google Drive 時，App 仍可在本機使用。</p>
+    </section>
+
+    <section>
+      <h2>Privacy and data</h2>
+      <p>Business card data is stored locally on the device by default. When the user exports or backs up data, the exported backup may include contact fields and saved images selected or created by the user.</p>
+      <p>For details, please read the <a href="https://jensen0915.github.io/myapp-privacy-policy/snapscancard.html">SnapScanCard Privacy Policy</a>.</p>
+    </section>
+
+    <section>
+      <h2>Developer contact</h2>
+      <p>For support, questions, or privacy requests, contact <a href="mailto:jensen0915@gmail.com">jensen0915@gmail.com</a>.</p>
+      <p class="note">Last updated: 2026-05-26</p>
+    </section>
+  </main>
+</body>
+</html>
