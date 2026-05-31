@@ -2,6 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
+  <meta name="google-site-verification" content="google1b0ca0cdc0b3bcba">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Health Log</title>
   <meta name="description" content="Health Log is a gentle personal health record app for Android.">
@@ -69,6 +70,18 @@
       gap: 10px 18px;
       margin-top: 18px;
     }
+    .page-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      margin-bottom: 20px;
+    }
+    .page-links a {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
     .note {
       color: var(--muted);
       font-size: 0.95rem;
@@ -78,13 +91,20 @@
 <body>
   <main>
     <article class="hero">
+      <nav class="page-links" aria-label="Site navigation">
+        <a href="https://jensen-app-web-hosting.web.app/health-log-home.html">Home</a>
+        <a rel="privacy-policy" href="https://jensen-app-web-hosting.web.app/health-log.html">Privacy Policy</a>
+        <a href="https://jensen-app-web-hosting.web.app/health-log-terms.html">Terms of Service</a>
+        <a href="https://jensen-app-web-hosting.web.app/health-log-zh.html">繁體中文隱私權條款</a>
+      </nav>
       <h1>Health Log</h1>
       <p class="tagline">A gentle personal health record app for Android.</p>
       <p>Health Log helps users keep a simple local record of weight, body fat, blood pressure, heart rate, notes, and personal health goals. The app is designed as a low-pressure daily record tool, not as a medical diagnosis service.</p>
       <p>健康紀錄是一款 Android 個人健康紀錄 App，可協助使用者以低壓力的方式記錄體重、體脂、血壓、心率、備註與個人目標。本 App 是日常紀錄工具，不提供醫療診斷。</p>
+      <p>Privacy Policy URL: <a rel="privacy-policy" href="https://jensen-app-web-hosting.web.app/health-log.html">https://jensen-app-web-hosting.web.app/health-log.html</a></p>
       <div class="links">
-        <a href="https://jensen0915.github.io/myapp-privacy-policy/health-log.html">Privacy Policy</a>
-        <a href="https://jensen0915.github.io/myapp-privacy-policy/health-log-terms.html">Terms of Service</a>
+        <a rel="privacy-policy" href="https://jensen-app-web-hosting.web.app/health-log.html">Privacy Policy</a>
+        <a href="https://jensen-app-web-hosting.web.app/health-log-terms.html">Terms of Service</a>
         <a href="mailto:jensen0915@gmail.com">Contact Support</a>
       </div>
     </article>
@@ -110,7 +130,7 @@
       <h2>Privacy and health information</h2>
       <p>Health data is stored on the user's device by default. The app does not upload records to a developer-operated server. Google Drive backup uses the user's own Google account storage after the user signs in.</p>
       <p>Health Log is not a medical device and does not provide diagnosis, treatment, or professional medical advice. Users should consult a qualified health professional for medical concerns.</p>
-      <p>For details, please read the <a href="https://jensen0915.github.io/myapp-privacy-policy/health-log.html">Health Log Privacy Policy</a>.</p>
+      <p>For details, please read the <a rel="privacy-policy" href="https://jensen-app-web-hosting.web.app/health-log.html">Health Log Privacy Policy</a>.</p>
     </section>
 
     <section>

@@ -48,12 +48,20 @@ a {
     margin: 0 0 24px;
 }
 
-.language-switch a {
+.language-switch a,
+.page-links a {
     display: inline-block;
     border: 1px solid #cbd5e6;
     border-radius: 999px;
     padding: 6px 12px;
     text-decoration: none;
+}
+
+.page-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0 0 20px;
 }
 
 .notice {
