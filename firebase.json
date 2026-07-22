@@ -6,7 +6,8 @@
       ".firebaserc",
       ".firebase/**",
       ".git/**",
-      "README-firebase-hosting.md"
+      "README-firebase-hosting.md",
+      "STATUS.md"
     ],
     "cleanUrls": false,
     "trailingSlash": false
