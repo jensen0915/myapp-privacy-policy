@@ -16,7 +16,7 @@
                 <a href="chrome-ad-jump-guard-zh.html">繁體中文</a>
             </nav>
             <h1>Ad Jump Guard Privacy Policy</h1>
-            <p class="meta"><strong>Last updated:</strong> May 31, 2026</p>
+            <p class="meta"><strong>Last updated:</strong> September 18, 2026</p>
 
             <h2>1. Introduction</h2>
             <p>
@@ -47,9 +47,36 @@
 
             <h2>4. Permissions</h2>
             <p>
-                The extension may request browser permissions needed to inspect navigation events, apply
-                redirect or blocking rules, show extension status, and save user settings. Permissions are
-                used only for Ad Jump Guard's advertised functionality.
+                Ad Jump Guard requests only the browser permissions needed to protect users
+                from suspicious ad redirects, forced tab opens, and redirect traps:
+            </p>
+            <ul>
+                <li>
+                    <code>declarativeNetRequest</code>: Applies packaged local rules to block
+                    known pop-under, forced-redirect, and ad-loader requests.
+                </li>
+                <li>
+                    <code>storage</code>: Stores user settings, site rules, allowlists,
+                    blocklists, and limited local blocking statistics.
+                </li>
+                <li>
+                    <code>tabs</code>: Detects and handles suspicious tabs opened by
+                    protected pages.
+                </li>
+                <li>
+                    <code>webNavigation</code>: Detects suspicious same-tab redirects and
+                    back-button traps.
+                </li>
+                <li>
+                    Host access: Allows the extension to detect suspicious popups,
+                    redirects, and navigation behavior on web pages.
+                </li>
+            </ul>
+            <p>
+                All blocking rules are packaged with the extension and executed locally by
+                Chrome on the user's device. Ad Jump Guard does not inspect request bodies,
+                download rules or remote code from external servers, or transmit browsing
+                data to the developer or third-party servers.
             </p>
 
             <h2>5. Data Sharing</h2>

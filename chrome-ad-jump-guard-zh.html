@@ -16,7 +16,7 @@
                 <a href="chrome-ad-jump-guard-zh.html">繁體中文</a>
             </nav>
             <h1>Ad Jump Guard 隱私權政策</h1>
-            <p class="meta"><strong>最後更新：</strong>2026 年 5 月 31 日</p>
+            <p class="meta"><strong>最後更新：</strong>2026 年 9 月 18 日</p>
 
             <h2>1. 簡介</h2>
             <p>
@@ -44,8 +44,31 @@
 
             <h2>4. 權限</h2>
             <p>
-                本擴充功能可能要求必要的瀏覽器權限，以檢查導覽事件、套用重新導向或封鎖規則、
-                顯示擴充功能狀態並保存使用者設定。權限僅用於 Ad Jump Guard 標示的功能。
+                Ad Jump Guard 僅要求提供可疑廣告跳轉、強制開啟分頁與重新導向防護所需的瀏覽器權限：
+            </p>
+            <ul>
+                <li>
+                    <code>declarativeNetRequest</code>：套用隨擴充功能封裝的本機規則，
+                    阻擋已知的 pop-under、強制重新導向及廣告載入器請求。
+                </li>
+                <li>
+                    <code>storage</code>：儲存使用者設定、網站規則、允許或封鎖清單，
+                    以及有限的本機攔截統計資料。
+                </li>
+                <li>
+                    <code>tabs</code>：偵測及處理由受保護頁面開啟的可疑分頁。
+                </li>
+                <li>
+                    <code>webNavigation</code>：偵測可疑的同分頁重新導向及上一頁陷阱。
+                </li>
+                <li>
+                    網站存取權限：讓擴充功能在網頁中偵測可疑彈窗、跳轉及導覽行為。
+                </li>
+            </ul>
+            <p>
+                所有封鎖規則均隨擴充功能封裝，並由 Chrome 在使用者裝置上執行。
+                Ad Jump Guard 不會讀取請求本文、不會從外部伺服器下載規則或遠端程式碼，
+                也不會將瀏覽資料傳送至開發者或第三方伺服器。
             </p>
 
             <h2>5. 資料分享</h2>

@@ -16,13 +16,14 @@
                 <a href="tiny-move-zh.html">繁體中文</a>
             </nav>
             <h1>Tiny Move Privacy Policy</h1>
-            <p class="meta"><strong>Last updated:</strong> August 12, 2026</p>
+            <p class="meta"><strong>Last updated:</strong> August 18, 2026</p>
 
             <h2>1. Introduction</h2>
             <p>
-                This Privacy Policy applies to Tiny Move, a lightweight reminder and activity-support
-                app published by Jensen. Tiny Move uses on-device settings to help users manage gentle
-                movement, eye-break, and hydration reminders.
+                This Privacy Policy applies to Tiny Move (“the App”), developed and
+                published by Jensen (“the Developer”). Tiny Move helps users manage
+                gentle movement, eye-break, hydration, and activity reminders using
+                settings and data processed on the user's device.
             </p>
 
             <h2>2. Data Stored Locally</h2>
@@ -32,7 +33,7 @@
                 device. This information is used only to provide reminder features.
             </p>
             <p>
-                Jensen does not operate servers that collect, store, analyze, or share Tiny Move records.
+                The Developer does not operate servers that collect, store, analyze, or share Tiny Move records.
             </p>
 
             <h2>3. Notifications</h2>
@@ -42,46 +43,27 @@
                 and are not used for advertising, tracking, or developer-side analytics.
             </p>
 
-            <h2>4. Activity Recognition</h2>
+            <h2>4. Activity Recognition and Reminders</h2>
             <p>
-                If you enable motion-aware sedentary reminders and grant activity recognition permission,
-                Tiny Move may use activity information provided by Android to determine whether the device
-                appears to be moving, still, or in a vehicle-related state. This is used only to reduce
-                inappropriate sedentary reminders and show local reminder status.
+                When the user enables Move reminders and grants activity recognition permission, Tiny Move
+                uses Android Activity Recognition to receive inferred activity states such as walking,
+                moving, still, or in a vehicle.
             </p>
+            <p>These activity states are used only to:</p>
+            <ul>
+                <li>Pause inappropriate sedentary reminders while the user is moving or travelling in a vehicle.</li>
+                <li>Restart the sedentary reminder timer after the user becomes still again.</li>
+                <li>Display local motion diagnostics and an estimated continuous stillness duration on the Status screen.</li>
+            </ul>
             <p>
-                Tiny Move does not use activity recognition to determine your location, create travel
-                histories, identify places, make medical assessments, or track you for advertising. The
-                related state is processed and stored only on your device.
-            </p>
-
-            <h2>5. Health Connect Step Data</h2>
-            <p>
-                Health Connect is optional. Tiny Move requests read-only step data permission
-                (<code>android.permission.health.READ_STEPS</code>) only after you choose to connect and
-                grant permission.
-            </p>
-            <p>
-                After permission is granted, Tiny Move reads aggregated step counts for today, the most
-                recent 7 local calendar days including today, and the most recent 2 hours. These aggregates
-                are used only to display an in-app activity summary, a 7-day trend, and optional low-pressure
-                activity suggestions. Tiny Move does not write health data to Health Connect.
-            </p>
-            <p>
-                Tiny Move does not request heart rate, sleep, location, exercise session, background health
-                data, or health history permissions. The app does not retain raw step records or create a
-                separate health-history database. Health Connect data is read only while you use the app,
-                manually refresh it, or return the app to the foreground.
-            </p>
-            <p>
-                If another app, such as a fitness app or wearable companion app, writes steps to Health
-                Connect, Tiny Move may display the aggregates provided by Health Connect. Those apps' data
-                collection, synchronization, and sharing practices remain governed by their own privacy policies.
+                Tiny Move does not access Health Connect, step counts, location, or raw accelerometer data.
+                Activity recognition data is not used for medical diagnosis, health scoring, advertising,
+                or location tracking, and is not uploaded or shared with third-party servers.
             </p>
 
-            <h2>6. Data Sharing, Analytics, and Advertising</h2>
+            <h2>5. Data Sharing, Analytics, and Advertising</h2>
             <p>
-                Jensen does not sell Tiny Move data or share it with advertisers, analytics providers,
+                The Developer does not sell Tiny Move data or share it with advertisers, analytics providers,
                 data brokers, or developer-operated external servers. Tiny Move contains no advertising SDK
                 or third-party analytics SDK.
             </p>
@@ -91,30 +73,35 @@
                 synchronization mechanism.
             </p>
 
-            <h2>7. Your Choices and Data Deletion</h2>
+            <h2>6. Data Retention and Deletion</h2>
             <p>
-                You can turn reminders and motion-aware features on or off in Tiny Move at any time. You can
-                also manage or revoke Health Connect permission through Health Connect or Android system
-                settings. After revocation, Tiny Move will stop reading subsequent Health Connect data.
+                Reminder settings, daily rhythm settings, reminder interaction history, scheduling state,
+                and activity states and timestamps derived from Activity Recognition are stored only on the
+                user's device.
             </p>
             <p>
-                You can remove Tiny Move's local data by clearing app storage or uninstalling the app.
-                Because Jensen does not store data on developer-operated servers, there is no developer-side
-                account or cloud record to delete.
+                This local data is retained until the user clears Tiny Move's app data or uninstalls the app.
+                Users may revoke the activity recognition permission at any time through Android system
+                settings. After permission is revoked, Tiny Move stops receiving new activity states and uses
+                fixed-interval reminders instead.
+            </p>
+            <p>
+                Tiny Move has no user accounts, in-app cloud synchronization, or server-side database.
+                This data is not sold, uploaded, or shared with third parties.
             </p>
 
-            <h2>8. Children's Privacy</h2>
+            <h2>7. Children's Privacy</h2>
             <p>
                 Tiny Move is not specifically directed to children. We do not knowingly collect personal
                 data from children.
             </p>
 
-            <h2>9. Changes to This Policy</h2>
+            <h2>8. Changes to This Policy</h2>
             <p>
                 We may update this Privacy Policy from time to time. Updates will be reflected on this page.
             </p>
 
-            <h2>10. Contact</h2>
+            <h2>9. Contact</h2>
             <p>
                 If you have questions about this Privacy Policy, contact
                 <a href="mailto:jensen0915@gmail.com">jensen0915@gmail.com</a>.
