@@ -19,14 +19,15 @@
 
             <section id="zh-tw" lang="zh-Hant">
                 <h1>SyncBridge 隱私權政策</h1>
-                <p class="meta"><strong>最後更新日期：</strong>2026 年 9 月 10 日</p>
-                <p><strong>開發者／發布者：</strong>Jensen</p>
+                <p class="meta"><strong>最後更新日期：</strong>2026 年 9 月 21 日</p>
+                <p><strong>開發者／發布者：</strong>Jensen Chou（Jensen）</p>
                 <p><strong>隱私問題聯絡信箱：</strong><a href="mailto:jensen0915@gmail.com">jensen0915@gmail.com</a></p>
                 <p>
-                    SyncBridge（以下稱「本應用程式」）用於在同一區域網路內，於 Windows 電腦與 Android
-                    裝置之間傳輸檔案，也支援 Android 裝置間由使用者主動發起的一次性檔案傳輸。本政策說明
-                    本應用程式與開發者如何存取、使用、分享、保護、保存及刪除資料。
+                    本隱私權政策適用於 SyncBridge 的 Android 與 Windows 版本（以下合稱「本應用程式」）。
+                    SyncBridge 用於在同一區域網路內，於 Windows 與 Android 裝置之間，以及 Windows 裝置之間、
+                    Android 裝置之間，進行支援的檔案傳輸或同步操作。各平台提供的功能可能不同。
                 </p>
+                <p>本政策說明本應用程式與開發者如何存取、使用、分享、保護、保存及刪除資料。</p>
 
                 <h2>1. 資料存取與本機儲存</h2>
                 <p>為提供配對與檔案傳輸功能，本應用程式可能在裝置本機儲存：</p>
@@ -44,15 +45,20 @@
 
                 <h2>2. 使用者選擇的檔案與資料夾</h2>
                 <p>
-                    本應用程式使用 Android 系統的 Storage Access Framework。只有在使用者透過系統介面選擇
-                    檔案或資料夾並授權後，本應用程式才能存取相關內容；本應用程式不使用
-                    <code>MANAGE_EXTERNAL_STORAGE</code> 權限。
+                    Android 版使用系統的 Storage Access Framework，依使用者透過系統介面選擇的檔案、資料夾及
+                    授予的存取權限處理內容；Android 版不使用 <code>MANAGE_EXTERNAL_STORAGE</code> 權限。
                 </p>
                 <p>
-                    當使用者主動要求傳輸時，所選檔案的內容、檔名、大小、修改時間及完整性雜湊會直接傳送至
-                    使用者核准的區域網路裝置。這是使用者要求的裝置間資料傳輸，不是將檔案傳送給開發者。
-                    開發者不營運用來中轉或儲存這些檔案的雲端伺服器。
+                    Windows 版以一般使用者權限執行，依使用者在應用程式中的選擇與設定，讀取來源檔案或資料夾，
+                    並將接收的檔案寫入指定目的地。Windows 版不使用 Android 的 Storage Access Framework，
+                    其檔案存取受 Windows 帳戶及檔案系統權限管理。
                 </p>
+                <p>
+                    執行使用者要求或已設定的傳輸與同步工作時，所需的檔案內容、檔名、大小、修改時間及完整性
+                    雜湊等資料，會直接傳送至使用者核准的區域網路裝置。接收行為依接收端的核准及目的地設定處理；
+                    使用者可依支援的功能設定受信任裝置的自動接受。
+                </p>
+                <p>這些資料傳輸不是將檔案傳送給開發者。開發者不營運用來中轉或儲存這些檔案的雲端伺服器。</p>
 
                 <h2>3. 資料使用方式</h2>
                 <p>本應用程式僅在提供下列功能所需的範圍內使用資料：</p>
@@ -70,7 +76,7 @@
 
                 <h2>4. 資料分享與裝置間傳輸</h2>
                 <p>
-                    本應用程式只會依使用者主動操作，將傳輸所需資料直接提供給使用者核准的配對裝置。
+                    本應用程式依使用者主動操作或已設定的同步與傳輸規則，將必要資料直接提供給使用者核准的裝置。
                     配對的另一台裝置可能保存收到的檔案及其本機配對或傳輸紀錄；該裝置上的資料需由使用者
                     在該裝置另行管理與刪除。
                 </p>
@@ -81,6 +87,7 @@
                 </p>
 
                 <h2>5. 第三方服務：Google Code Scanner</h2>
+                <p>本節所述 Google Code Scanner 僅用於 Android 版的配對掃碼功能。Windows 版不使用此服務。</p>
                 <p>
                     本應用程式使用由 Google Play services／ML Kit 提供的 Google Code Scanner 掃描配對 QR Code，
                     因此本應用程式本身不直接要求相機權限。依 Google 文件，掃描影像在裝置上處理，Google 不會
@@ -96,9 +103,14 @@
 
                 <h2>6. 網路、通知與背景執行</h2>
                 <p>
-                    本應用程式會使用區域網路、網路狀態、通知、前景服務及背景排程能力，以尋找已配對裝置、
-                    執行使用者要求的傳輸、顯示進度及允許取消。網路位址等連線資訊會在完成這些功能所需的範圍內處理。
+                    本應用程式使用區域網路及必要的連線資訊，以辨識裝置、驗證連線及執行檔案傳輸或同步。
                 </p>
+                <p>
+                    Android 版可能使用通知、前景服務及背景排程來維持使用者要求的工作、顯示進度及提供取消操作。
+                    Windows 版在程式執行期間，可啟動本機 HTTPS 服務以處理配對及區域網路傳輸。可用的通知與
+                    背景執行方式依平台及版本而異。
+                </p>
+                <p>網路位址等連線資訊僅在完成上述功能所需的範圍內處理。</p>
 
                 <h2>7. 資料安全</h2>
                 <p>
@@ -109,15 +121,25 @@
 
                 <h2>8. 資料保存與刪除</h2>
                 <p>
-                    本機設定、配對資料、權杖、歷史、同步快照、中斷續傳資訊及暫存檔案，會在提供相關功能所需
-                    期間保留，或保留至使用者取消配對、清除本應用程式資料或解除安裝為止。使用者可透過這些方式
-                    刪除本應用程式私有儲存的相關資料。
+                    本應用程式會在提供相關功能所需期間，於本機保存設定、裝置識別資訊、配對資料、驗證權杖、
+                    傳輸歷史、成功時間摘要、同步快照、中斷續傳資訊及暫存檔案。實際保存項目依平台與功能而異。
                 </p>
                 <p>
-                    已完成並保存至使用者所選資料夾的檔案，不會因取消配對、清除本應用程式資料或解除安裝而
-                    自動刪除，使用者須自行管理。配對的另一台裝置若已保存檔案或配對紀錄，也須在該裝置另行刪除。
-                    本應用程式沒有使用者帳號，因此沒有帳號刪除流程。
+                    解除配對用於撤銷相關裝置的信任與存取授權，不代表刪除所有傳輸歷史、應用程式資料或已接收的檔案。
                 </p>
+                <p>
+                    Windows 版的「清除已結束紀錄」會清除歷史清單中的展示紀錄，不刪除實際檔案、不解除配對，
+                    也不清除正在傳輸或等待續傳工作所需的資料。裝置的上次成功時間摘要會保留。
+                </p>
+                <p>
+                    使用者可透過各平台提供的應用程式資料管理功能清除本機資料。解除安裝後是否仍保留部分設定或資料，
+                    取決於平台、安裝方式及系統行為；不應將解除安裝視為保證刪除所有資料的方式。
+                </p>
+                <p>
+                    已保存至使用者所選資料夾的檔案，須由使用者自行管理與刪除。配對的另一台裝置若已保存檔案或紀錄，
+                    也須在該裝置另行刪除。
+                </p>
+                <p>本應用程式沒有使用者帳號，因此沒有帳號刪除流程。</p>
 
                 <h2>9. 兒童隱私</h2>
                 <p>
@@ -134,7 +156,7 @@
                 <h2>11. 聯絡方式</h2>
                 <p>
                     若您對本隱私權政策或資料處理方式有任何疑問，請聯絡：<br>
-                    開發者／發布者：Jensen<br>
+                    開發者／發布者：Jensen Chou（Jensen）<br>
                     電子郵件：<a href="mailto:jensen0915@gmail.com">jensen0915@gmail.com</a>
                 </p>
             </section>
@@ -143,15 +165,16 @@
 
             <section id="en" lang="en">
                 <h1>SyncBridge Privacy Policy</h1>
-                <p class="meta"><strong>Last updated:</strong> September 10, 2026</p>
-                <p><strong>Developer/Publisher:</strong> Jensen</p>
+                <p class="meta"><strong>Last updated:</strong> September 21, 2026</p>
+                <p><strong>Developer/Publisher:</strong> Jensen Chou (Jensen)</p>
                 <p><strong>Privacy contact:</strong> <a href="mailto:jensen0915@gmail.com">jensen0915@gmail.com</a></p>
                 <p>
-                    SyncBridge (the “App”) transfers files between Windows computers and Android devices on the same
-                    local network. It also supports one-time file transfers between Android devices when initiated by
-                    the user. This policy explains how the App and the Developer access, use, share, secure, retain,
-                    and delete information.
+                    This Privacy Policy applies to the Android and Windows versions of SyncBridge (collectively, the “App”).
+                    SyncBridge provides supported file-transfer or synchronization operations between Windows and Android
+                    devices, between Windows devices, and between Android devices on the same local network. Available
+                    features may differ by platform.
                 </p>
+                <p>This policy explains how the App and the Developer access, use, share, secure, retain, and delete information.</p>
 
                 <h2>1. Data Access and Local Storage</h2>
                 <p>To provide pairing and file-transfer functions, the App may store the following on your device:</p>
@@ -170,16 +193,23 @@
 
                 <h2>2. Files and Folders You Select</h2>
                 <p>
-                    The App uses Android's Storage Access Framework. It can access relevant content only after you select
-                    files or folders and grant access through the Android system interface. The App does not use the
-                    <code>MANAGE_EXTERNAL_STORAGE</code> permission.
+                    The Android version uses the system Storage Access Framework to access content according to the files
+                    and folders you select and the permissions you grant through the system interface. The Android version
+                    does not use the <code>MANAGE_EXTERNAL_STORAGE</code> permission.
                 </p>
                 <p>
-                    When you initiate a transfer, the selected file content, filename, size, modification time, and
-                    integrity hash are sent directly to a local-network device you approved. This is a device-to-device
-                    transfer requested by you, not a transfer to the Developer. The Developer does not operate a cloud
-                    server that relays or stores these files.
+                    The Windows version runs with standard user permissions. Based on your selections and settings in the
+                    App, it reads source files or folders and writes received files to the designated destination. The
+                    Windows version does not use Android’s Storage Access Framework; file access is governed by Windows
+                    account and file-system permissions.
                 </p>
+                <p>
+                    When performing transfers or synchronization tasks you request or configure, necessary information such
+                    as file contents, filenames, sizes, modification times, and integrity hashes is sent directly to
+                    local-network devices you approve. Receiving follows the receiving device’s approval and destination
+                    settings. Where supported, you may configure automatic acceptance for trusted devices.
+                </p>
+                <p>These transfers do not send your files to the Developer. The Developer does not operate a cloud server that relays or stores these files.</p>
 
                 <h2>3. How Data Is Used</h2>
                 <p>The App uses information only as needed to:</p>
@@ -197,7 +227,8 @@
 
                 <h2>4. Data Sharing and Device-to-Device Transfers</h2>
                 <p>
-                    The App provides transfer data directly to an approved paired device only when you initiate the action.
+                    The App sends necessary information directly to approved devices based on actions you initiate or
+                    synchronization and transfer settings you configure.
                     The other paired device may retain received files and its own local pairing or transfer records. You must
                     manage and delete that information separately on that device.
                 </p>
@@ -209,6 +240,10 @@
                 </p>
 
                 <h2>5. Third-Party Service: Google Code Scanner</h2>
+                <p>
+                    Google Code Scanner described in this section is used only by the Android version for scanning pairing
+                    QR codes. The Windows version does not use this service.
+                </p>
                 <p>
                     The App uses Google Code Scanner, provided through Google Play services/ML Kit, to scan pairing QR codes.
                     The App therefore does not directly request camera permission. According to Google, scan images are
@@ -225,10 +260,16 @@
 
                 <h2>6. Network, Notifications, and Background Operation</h2>
                 <p>
-                    The App uses local-network access, network status, notifications, foreground services, and background
-                    scheduling to find paired devices, perform transfers requested by you, display progress, and allow
-                    cancellation. Connection information such as network addresses is processed only as needed for these functions.
+                    The App uses the local network and necessary connection information to identify devices, authenticate
+                    connections, and perform file transfers or synchronization.
                 </p>
+                <p>
+                    The Android version may use notifications, foreground services, and background scheduling to continue
+                    requested tasks, display progress, and provide cancellation controls. While running, the Windows version
+                    may operate a local HTTPS service for pairing and local-network transfers. Available notification and
+                    background-operation features vary by platform and version.
+                </p>
+                <p>Connection information, such as network addresses, is processed only as needed for these functions.</p>
 
                 <h2>7. Data Security</h2>
                 <p>
@@ -240,16 +281,29 @@
 
                 <h2>8. Data Retention and Deletion</h2>
                 <p>
-                    Local settings, pairing data, tokens, history, synchronization snapshots, resume information, and temporary
-                    files are retained while needed for the related functions or until you unpair a device, clear the App's data,
-                    or uninstall the App. You can use these actions to delete related data in the App's private storage.
+                    The App retains local settings, device identifiers, pairing information, authentication tokens, transfer
+                    history, successful-transfer summaries, synchronization snapshots, resume information, and temporary files
+                    for as long as needed to provide the related functions. The information retained varies by platform and feature.
                 </p>
                 <p>
-                    Completed files saved in a folder you selected are not automatically deleted when you unpair, clear App data,
-                    or uninstall the App; you must manage those files yourself. If another paired device has retained files or
-                    pairing records, you must delete them separately on that device. The App has no user accounts, so there is
-                    no account-deletion process.
+                    Unpairing revokes the relevant device’s trust and access authorization. It does not mean that all transfer
+                    history, application data, or previously received files are deleted.
                 </p>
+                <p>
+                    In the Windows version, clearing finished history removes records from the displayed history. It does not
+                    delete actual files, unpair devices, or remove information needed by active transfers or tasks awaiting
+                    resumption. Device summaries showing the most recent successful operation are retained.
+                </p>
+                <p>
+                    You may clear local data using the application-data management options available on your platform. Whether
+                    some settings or data remain after uninstallation depends on the platform, installation method, and system
+                    behavior. Uninstallation should not be treated as a guarantee that all data has been deleted.
+                </p>
+                <p>
+                    You must manage and delete files saved to your selected folders yourself. Files or records retained on
+                    another paired device must be deleted separately on that device.
+                </p>
+                <p>The App has no user accounts, so there is no account-deletion process.</p>
 
                 <h2>9. Children's Privacy</h2>
                 <p>
@@ -268,7 +322,7 @@
                 <h2>11. Contact</h2>
                 <p>
                     If you have questions about this privacy policy or the App's data practices, contact:<br>
-                    Developer/Publisher: Jensen<br>
+                    Developer/Publisher: Jensen Chou (Jensen)<br>
                     Email: <a href="mailto:jensen0915@gmail.com">jensen0915@gmail.com</a>
                 </p>
             </section>
